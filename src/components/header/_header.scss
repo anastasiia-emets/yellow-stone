@@ -1,0 +1,223 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+.wrapper-header{
+  display: flex;
+  justify-content: space-between;
+  max-width: 940px;
+}
+.header {
+
+  padding: 17px 10% 32px 17%;
+  background-color: #4ec391;
+
+
+  &__link {
+
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.28);
+    color: #ffffff;
+    font-family: 'Dosis', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 36px;
+    display: inline-block;
+    text-transform: uppercase;
+    padding-right: 18px;
+    padding-top: 10px;
+    cursor: pointer;
+
+  }
+
+  &__logo {
+    height: 29px;
+  }
+
+  &__links {
+    margin-top: -10px;
+  }
+}
+
+.container.header-nav {
+  width: 100%;
+  height: 50%;
+  position: absolute;
+
+  left: 50%;
+  transform: translate(-50%);
+  background-color: #4ec391;
+  border-radius: 0 0 30% 30%;
+}
+
+.header-nav {
+  &__header {
+
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.28);
+    color: #ffffff;
+    font-family: 'Dosis', sans-serif;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 36px;
+    text-transform: uppercase;
+    letter-spacing: 4.8px;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  &__icons {
+    display: flex;
+  }
+
+  &__icons {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  &__icon1 {
+    cursor: pointer;
+  }
+
+  &__icon2 {
+    cursor: pointer;
+  }
+
+  &__line1 {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    padding: 20px 15%;
+    margin-top: 30px;
+
+    .header-nav__icon2 {
+      margin-right: 12%;
+    }
+  }
+
+  &__line2 {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    padding: 10px 9%;
+    margin-top: -40px;
+
+    .header-nav__icon2 {
+      margin-right: 40%;
+    }
+
+    .header-nav__icon1 {
+      margin-right: 30px;
+    }
+  }
+
+  &__line3 {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    padding: 20px 12%;
+    margin-top: -20px;
+
+    img.header-nav__icon1 {
+      height: 49px;
+      width: 49px;
+      margin-left: 30%;
+      margin-top: 40px;
+    }
+
+
+  }
+
+}
+
+a.header__link {
+  cursor: pointer;
+}
+
+a.header__link:after {
+  display: block;
+  content: "";
+  height: 2px;
+  width: 0%;
+  background-color: white;
+  transition: width .3s ease-in-out;
+}
+
+a.header__link:hover:after,
+a.header__link:focus:after {
+  width: 100%;
+}
+
+.slider {
+  max-width: 90%;
+
+  margin: auto;
+  height: 300px;
+  margin-bottom: 15px;
+}
+
+
+.slideText {
+  position: absolute;
+  color: #fff;
+  font-size: 35px;
+  /* Выравнивание текста по горизонтали и по вертикали*/
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  /* Тень*/
+  text-shadow: 1px 1px 1px #000, 0 0 1em #000;
+}
+
+/* Кружочки */
+.slider-dots {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.slider-dots_item {
+  cursor: pointer;
+  height: 7px;
+  width: 7px;
+  margin: 0 2px;
+  background-color: black;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.slider-dots_item:hover {
+  background-color: black;
+}
+
+/* Анимация слайдов */
+.slider .item {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4
+  }
+  to {
+    opacity: 1
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+  to {
+    opacity: 1
+  }
+}
+
+.header-nav__icons img {
+  height: 49px;
+  width: 49px;
+}

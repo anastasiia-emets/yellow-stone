@@ -1,0 +1,97 @@
+.gallery {
+  max-width: 970px;
+  margin: 0 auto;
+  padding: 70px 0px;
+
+  &-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+
+  &__buttons {
+    display: flex;
+    margin-right: 50px;
+  }
+
+  &__header {
+
+    color: #282828;
+    font-family: 'Dosis', sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 48.06px;
+    text-transform: uppercase;
+    letter-spacing: 3.6px;
+  }
+
+  &__button {
+    width: 56px;
+    color: #383f49;
+    height: 30px;
+    /* Style for "Rounded Re" */
+    text-align: center;
+    padding-top: 10px;
+    border: 2px solid #282828;
+    border-radius: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+    &:hover{
+      background: #434343;
+      color: white;
+      letter-spacing: 1px;
+      -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+      -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+      box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+      transition: all 0.4s ease 0s;
+    }
+
+  }
+
+  &__images-line {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+
+  }
+
+  &__img {
+    width: 300px;
+    height: 240px;
+    margin-bottom: 20px;
+  }
+
+  &__button-view {
+
+    color: #414141;
+    font-family: 'Dosis', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 45.06px;
+    text-transform: uppercase;
+    width: 180px;
+    height: 40px;
+    border: 2px solid #282828;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    &:hover{
+      background: #434343;
+      color: white;
+      letter-spacing: 1px;
+      -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+      -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+      box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+      transition: all 0.4s ease 0s;
+    }
+  }
+
+  &-item2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+}

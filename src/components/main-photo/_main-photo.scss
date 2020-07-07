@@ -1,0 +1,72 @@
+.main-block {
+  margin-top: 350px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 70px;
+
+  &__header {
+    color: #282828;
+    font-family: 'Dosis', sans-serif;
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 48.06px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 10px;
+    margin-bottom: 28px;
+  }
+
+  &__description {
+    max-width: 584px;
+    color: #5e5e5e;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28px;
+  }
+
+  &__button {
+    /* Style for "Learn more" */
+    color: #414141;
+    font-family: 'Dosis', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 48.06px;
+    text-transform: uppercase;
+    width: 140px;
+    height: 40px;
+    border: 2px solid #282828;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    background-image: linear-gradient(to top, rgba(221, 221, 221, 0) 0%, rgba(255, 255, 255, 0) 100%);
+    &:hover{
+      background: #434343;
+      color: white;
+      letter-spacing: 1px;
+      -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+      -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+      box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+      transition: all 0.4s ease 0s;
+    }
+  }
+
+  &-item {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 110px;
+    max-width: 940px;
+  }
+
+  &__img {
+    height: 171px;
+    margin-right: 87px;
+    margin-top: 40px;
+  }
+  &__img-right{
+    margin-left: 27px;
+
+  }
+
+}

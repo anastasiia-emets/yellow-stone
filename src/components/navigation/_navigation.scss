@@ -1,0 +1,50 @@
+.navigation {
+  height: 55px;
+  margin: 40px 49px 15px 47px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.75);
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  &__links {
+    margin-left: 48px;
+    margin-top: 17px;
+  }
+  &__link {
+    width: 49px;
+    height: 14px;
+    color: #5b5b5b;
+    font-family: Rockwell;
+    font-size: 18px;
+    font-weight: 400;
+    margin-right: 60px;
+    text-decoration: none;
+    &:hover{
+      opacity: 0.8;
+    }
+  }
+  &__search {
+    margin-right: 14px;
+    width: 261px;
+    height: 31px;
+    border: 1px solid rgba(205, 205, 205, 0.38);
+    background-color: #fafafa;
+    margin-top:12px;
+    color: #e5e2e2;
+    font-family: Rockwell;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 112.9px;
+    opacity: 0.4;
+    padding-left: 16px;
+    background-image: url("../../images/search.png");   
+    background-repeat: no-repeat; /*Убираем повтор изображения*/   
+    background-position: right;
+    padding-right:13px;  
+    cursor: pointer;
+    &:focus{
+      outline: none;
+      color:black;
+    }
+  }
+}
