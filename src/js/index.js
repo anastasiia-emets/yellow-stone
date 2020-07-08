@@ -1,7 +1,6 @@
 var mybutton = document.getElementsByClassName("footer__button ");
 
 
-// When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
@@ -12,13 +11,24 @@ function scrollFunction() {
     }
 }
 
-// When the user clicks on the button, scroll to the top of the document
 function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
+
 }
 var slideIndex = 1;
 showSlides(slideIndex);
+
+
+
+
+
+
+
+
+
+
+
 
 /* Функция увеличивает индекс на 1, показывает следующй слайд*/
 function plusSlide() {
@@ -55,3 +65,13 @@ function showSlides(n) {
     slides[slideIndex - 1].style.display = "block";
     dots[slideIndex - 1].className += " active";
 }
+$(function() {
+    // Owl Carousel
+    var owl = $(".owl-carousel");
+    owl.owlCarousel({
+        items: 1,
+        margin: 10,
+        loop: true
+
+    });
+});

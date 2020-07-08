@@ -47,7 +47,7 @@
     margin-top: 60px;
   }
   .info__header{
-    padding:10px;
+    margin-top: 0px;
   }
   .info-item2{
     display: flex;
@@ -56,10 +56,21 @@
   }
   .info-item2 img, .info-item2 div{
     margin-bottom: 30px;
+    text-align: center;
+  }
+  .info .header__link{
+    display: none;
+  }
+  .info-item2{
+    flex-direction: column;
+    margin: 0 auto;
   }
   .partners__images-line{
     width: 90%;
     flex-wrap: wrap;
+  }
+  .info .info__header{
+    margin-top: 0px;
   }
   .gallery__buttons{
     margin-right: 0px;

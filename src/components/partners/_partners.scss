@@ -51,13 +51,13 @@
       -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
       -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
       box-shadow: 5px 40px -10px rgba(0, 0, 0, 0.57);
-      transition: all 0.4s ease 0s;
+      transition: all 0.3s ease 0s;
     }
+
   }
 
   &__images-line {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     width: 85%;
     margin: 0 auto;
@@ -83,4 +83,101 @@
   }
 
 
+
 }
+
+.slider {
+  max-width: 90%;
+
+  margin: auto;
+  height: 300px;
+  margin-bottom: 15px;
+}
+
+
+.slideText {
+  position: absolute;
+  color: #fff;
+  font-size: 35px;
+  /* Выравнивание текста по горизонтали и по вертикали*/
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  /* Тень*/
+  text-shadow: 1px 1px 1px #000, 0 0 1em #000;
+}
+
+/* Кружочки */
+.slider-dots {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.slider-dots_item {
+  cursor: pointer;
+  height: 7px;
+  width: 7px;
+  margin: 0 2px;
+  background-color: black;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.slider-dots_item:hover {
+  background-color: black;
+}
+
+/* Анимация слайдов */
+.slider .item {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4
+  }
+  to {
+    opacity: 1
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+  to {
+    opacity: 1
+  }
+}
+.owl-item{
+  background: white;
+  display: flex;
+}
+.partners__slider{
+  width: 100%;
+}
+.owl-carousel .owl-item .partners__img1{
+  width: 124px;
+  height: 69px;
+
+}
+.owl-carousel .owl-item .partners__img2{
+  width: 310px;
+
+
+}
+.owl-carousel .owl-item .partners__img3{
+  width: 166px;
+  height: 42px;
+}
+.owl-carousel .owl-item .partners__img {
+  /* Style for "Nuke studi" */
+  width: 117px;
+  height: 113px;
+}
+

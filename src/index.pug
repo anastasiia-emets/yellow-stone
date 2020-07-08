@@ -5,6 +5,8 @@ html(lang='en')
         meta(name="viewport" content="width=device-width, initial-scale=1.0")
         link(rel="stylesheet" href="css/style.css")
         link(href='https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;700&family=Freehand&family=Lora:wght@700&family=Open+Sans&family=Roboto&display=swap' rel='stylesheet')
+        link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css')
+        link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css')
         title test
     body
     .main-wrapper
@@ -14,4 +16,7 @@ html(lang='en')
         include components/partners/partners
         include components/gallery/gallery
         include components/footer/footer
-        script(src="js/index.js" defer)
+
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js')
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js')
+        script(src="js/index.js")
